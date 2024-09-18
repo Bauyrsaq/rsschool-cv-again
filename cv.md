@@ -57,7 +57,7 @@ var twoSum = function(nums, target) {
 ## Education
 * [Python Programming](https://stepik.org/course/67/syllabus)
 * [Python: Basics and Applications](https://stepik.org/course/512/syllabus)
-* [The Odin Project](https://www.theodinproject.com/dashboard): [Foundations Course](https://www.theodinproject.com/paths/foundations/courses/foundations)
+* *[The Odin Project](https://www.theodinproject.com/dashboard)*: [Foundations Course](https://www.theodinproject.com/paths/foundations/courses/foundations)
 
 ## English
 **B1-B2** level
