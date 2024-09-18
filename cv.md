@@ -1,7 +1,7 @@
 # Ali Talap
 
 ## Contacts
-*Email:* talapali20@gmail.com
+*Email:* talapali20@gmail.com\
 *Phone:* +7 (777) 777 77 77
 
 ## About me
@@ -16,8 +16,8 @@ I'm currently a student of Information Technology. I've learnt a bunch of progra
 * Python
 
 ## Code examples
-[Codewars](https://www.codewars.com/dashboard) (*5 kyu*)
-Link to the task: [Moving Zeros To The End](https://www.codewars.com/kata/52597aa56021e91c93000cb0)
+[Codewars](https://www.codewars.com/dashboard) (*5 kyu*)\
+Link to the task: [Moving Zeros To The End](https://www.codewars.com/kata/52597aa56021e91c93000cb0)\
 Solution (*JavaScript*):
 ```
 function moveZeros(arr) {
@@ -25,8 +25,8 @@ function moveZeros(arr) {
 }
 ```
 
-[Leetcode](https://leetcode.com/) (*Easy*)
-Link to the task: [Two Sum](https://leetcode.com/problems/two-sum/)
+[Leetcode](https://leetcode.com/) (*Easy*)\
+Link to the task: [Two Sum](https://leetcode.com/problems/two-sum/)\
 Solution (*JavaScript*):
 ```
 var twoSum = function(nums, target) {
@@ -44,14 +44,14 @@ var twoSum = function(nums, target) {
 ```
 
 ## Experience
-**Name of the project:** *Anime culture*
-**Used languages:** *JavaScript*, *Python*, *HTML*, *CSS*, *Sqllite*
-**Link to the project:** [GitHub](https://github.com/Bauyrsaq/anime_culture)
+**Name of the project:** *Anime culture*\
+**Used languages:** *JavaScript*, *Python*, *HTML*, *CSS*, *Sqllite*\
+**Link to the project:** [GitHub](https://github.com/Bauyrsaq/anime_culture)\
 **Description:** This is a website which contains some information about anime and manga. I used HTML and CSS to show the content, JavaScript to interact with site and Sqllite to provide database using Python.
 
-**Name of the project:** *Library*
-**Used languages:** *C#*
-**Link to the project:** [GitHub](https://github.com/Bauyrsaq/PT-task0)
+**Name of the project:** *Library*\
+**Used languages:** *C#*\
+**Link to the project:** [GitHub](https://github.com/Bauyrsaq/PT-task0)\
 **Description:** This is a team project. We created a Windows application. It has 3 layered architecture: Data, Logic and Presentation. Every of these layers work independently and has test for each layer. Also it has database of library.
 
 ## Education
