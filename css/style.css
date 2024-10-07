@@ -157,7 +157,7 @@ h2.section__title {
 
 /* Skills */
 
-#skills .section__list {
+#skills .section__list, #courses .section__list {
     list-style: circle;
     margin-left: 20px;
     display: flex;
