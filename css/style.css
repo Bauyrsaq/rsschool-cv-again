@@ -73,7 +73,7 @@ body {
     padding-bottom: 20px;
 }
 
-.section p {
+.section h2, .section p {
     margin: 0;
 }
 
@@ -111,15 +111,17 @@ body {
     color: var(--secondary-color);
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 10px;
     /* position: relative; */
 }
 
-.section__title {
+h2.section__title {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     color: var(--secondary-color);
     text-transform: uppercase;
     letter-spacing: 10px;
+    margin-bottom: 10px;
     /* position: relative; */
 }
 
@@ -152,3 +154,12 @@ body {
     color: var(--secondary-color)
 }
 
+/* Skills */
+
+#skills .section__list {
+    list-style: circle;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
