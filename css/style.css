@@ -5,7 +5,7 @@
 
 * {
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 html {
@@ -57,11 +57,24 @@ body {
 .main-container {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.container .section {
+    width: 48%;
 }
 
 .section {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--default-color);
+    padding-bottom: 20px;
+}
+
+.section p {
+    margin: 0;
 }
 
 /* Profile */
@@ -69,6 +82,8 @@ body {
 .section.profile {
     flex-direction: row;
     width: 100%;
+    padding-bottom: 40px;
+    border-bottom: 10px solid var(--default-color);
 }
 
 .profile__container-img {
@@ -104,7 +119,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: var(--secondary-color);
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 10px;
     /* position: relative; */
 }
@@ -137,3 +151,4 @@ body {
     text-decoration: none;
     color: var(--secondary-color)
 }
+
