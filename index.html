@@ -5,6 +5,9 @@
         <meta charset="UTF-8">
         <link rel="icon" href="assets/icon/cv.png" type="image/png" sizes="32x32">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
         <title>CV</title>
     </head>
     <body>
@@ -13,9 +16,9 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item"><a class="nav__link link" href="#contacts">Contacts</a></li>
-                        <li class="nav__item"><a class="nav__link link" href="#about">About me</a></li>
+                        <li class="nav__item"><a class="nav__link link" href="#summary">Summary</a></li>
                         <li class="nav__item"><a class="nav__link link" href="#skills">Skills</a></li>
-                        <li class="nav__item"><a class="nav__link link" href="#examples">Code examples</a></li>
+                        <li class="nav__item"><a class="nav__link link" href="#code">Code</a></li>
                         <li class="nav__item"><a class="nav__link link" href="#experience">Experience</a></li>
                         <li class="nav__item"><a class="nav__link link" href="#education">Education</a></li>
                         <li class="nav__item"><a class="nav__link link" href="#english">English</a></li>
@@ -25,7 +28,25 @@
         </header>
 
         <main class="main">
-            <div class="container"></div>
+            <div class="container main-container">
+                <section class="section profile" id=profile">
+                    <div class="profile__container-img">
+                        <img src="assets/img/usui.jpg" alt="Avatar" class="profile__img" width="240" height="240">
+                    </div>
+                    <div class="profile__container">
+                        <h2 class="section__title">Ali Talap</h2>
+                        <p>Junior Front-end developer</p>
+                    </div>
+                </section>
+                <section class="section" id="contacts"></section>
+                <section class="section" id="summary"></section>
+                <section class="section" id="skills"></section>
+                <section class="section" id="code"></section>
+                <section class="section" id="courses"></section>
+                <section class="section" id="projects"></section>
+                <section class="section" id="education"></section>
+                <section class="section" id="languages"></section>
+            </div>
         </main>
 
         <footer class="footer">
