@@ -21,6 +21,10 @@ body {
     justify-content: space-between;
 }
 
+a:hover {
+    color: var(--default-color);
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -166,4 +170,46 @@ h2.section__title {
 #courses .section__list,
 #projects .section__list {
     list-style: circle;
+}
+
+/* Education and English */
+
+#education.section,
+#english.section {
+    border: none;
+}
+
+/* Footer */
+
+.footer {
+    font-size: 20px;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container .container__content {
+    display: flex;
+    gap: 10px;
+    line-height: 50px;
+}
+
+.footer .container .container__content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .container .container__content a:hover {
+    color: var(--default-color);
+}
+
+.container__logo img {
+    position: relative;
+    top: 7px;
+    width: 100px;
+    height: auto;
 }
