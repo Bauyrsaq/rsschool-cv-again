@@ -1,0 +1,260 @@
+:root {
+    --default-color: #333;
+    --secondary-color: #478d69;
+}
+
+@keyframes bottom-line {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a:hover {
+    color: var(--default-color);
+    position: relative;
+    transition: 0.3s;
+}
+
+a:hover::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: var(--default-color);
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    animation: bottom-line 0.3s;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header */
+
+.header {
+    font-size: 20px;
+    background-color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.nav__list {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav__link {
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+/* Main */
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.container .section {
+    width: 48%;
+}
+
+@media (max-width: 768px) {
+    .container .section {
+        width: 100%;
+        margin: 0 10px;
+    }
+}
+
+.section {
+    color: var(--default-color);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--default-color);
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+.section h2, .section p {
+    margin: 0;
+}
+
+/* Profile */
+
+.section.profile {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 40px;
+    border-bottom: 10px solid rgba(123, 123, 123, 0.7);
+}
+
+.profile__container-img {
+    text-align: center;
+}
+
+.profile__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile__img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}
+
+.profile__container .section__title {
+    font-size: 30px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+    position: relative;
+}
+
+h2.section__title {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    /* position: relative; */
+}
+
+.profile__container .section__title::before {
+    content: '';
+    width:50%;
+    height: 1px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: -5px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.profile__container p {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Contacts */
+
+.section__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section__link {
+    text-decoration: none;
+    color: var(--secondary-color)
+}
+
+/* Skills */
+
+#skills .section__list, 
+#courses .section__list,
+#projects .section__list {
+    list-style: circle;
+}
+
+/* Education and English */
+
+#education.section,
+#english.section {
+    border: none;
+}
+
+/* Footer */
+
+.footer {
+    font-size: 20px;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container .container__content {
+    display: flex;
+    gap: 10px;
+    line-height: 50px;
+}
+
+.footer .container .container__content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .container .container__content a:hover {
+    color: var(--default-color);
+}
+
+.footer .container .container__content a:hover::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: var(--default-color);
+    animation: bottom-line 0.3s;
+}
+
+.container__logo img {
+    position: relative;
+    top: 7px;
+    width: 100px;
+    height: auto;
+}
