@@ -96,7 +96,7 @@ a:hover::before {
 @media (max-width: 768px) {
     .container .section {
         width: 100%;
-        margin: 0 20px;
+        margin: 0 10px;
     }
 }
 
