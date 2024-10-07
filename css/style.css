@@ -72,6 +72,7 @@ body {
     margin-bottom: 20px;
     border-bottom: 1px solid var(--default-color);
     padding-bottom: 20px;
+    line-height: 1.5;
 }
 
 .section h2, .section p {
@@ -148,6 +149,10 @@ h2.section__title {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .section__link {
@@ -157,10 +162,8 @@ h2.section__title {
 
 /* Skills */
 
-#skills .section__list, #courses .section__list {
+#skills .section__list, 
+#courses .section__list,
+#projects .section__list {
     list-style: circle;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
