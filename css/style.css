@@ -66,6 +66,7 @@ body {
 }
 
 .section {
+    color: var(--default-color);
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;

@@ -60,7 +60,23 @@
                         <li class="section__item">Python</li>
                     </ul>
                 </section>
-                <section class="section" id="code"></section>
+                <section class="section" id="code">
+                    <h2 class="section__title">Code example</h2>
+                    <pre>
+var twoSum = function(nums, target) {
+    let result;
+    loop: for (let i = 0; i < nums.length; i++) {
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[i] + nums[j] === target) {
+                result = [i, j];
+                break loop;
+            }
+        }
+    }
+    return result
+};
+                    </pre>
+                </section>
                 <section class="section" id="courses"></section>
                 <section class="section" id="projects"></section>
                 <section class="section" id="education"></section>
