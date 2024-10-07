@@ -1,3 +1,8 @@
+:root {
+    --default-color: #333;
+    --secondary-color: #478d69;
+}
+
 * {
     box-sizing: border-box;
     outline: 1px solid red;
@@ -23,15 +28,26 @@ body {
 
 .link {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 /* Header */
 
+.header {
+    font-size: 20px;
+    background-color: var(--secondary-color);
+}
+
 .nav__list {
+    margin: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
     gap: 10px;
+}
+
+.nav__link {
+    padding: 0 20px;
+    line-height: 50px;
 }
