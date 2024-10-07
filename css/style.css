@@ -3,6 +3,16 @@
     --secondary-color: #478d69;
 }
 
+@keyframes bottom-line {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
 * {
     box-sizing: border-box;
     /* outline: 1px solid red; */
@@ -23,6 +33,19 @@ body {
 
 a:hover {
     color: var(--default-color);
+    position: relative;
+    transition: 0.3s;
+}
+
+a:hover::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: var(--default-color);
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    animation: bottom-line 0.3s;
 }
 
 .container {
@@ -40,6 +63,7 @@ a:hover {
 .header {
     font-size: 20px;
     background-color: var(--secondary-color);
+    margin-bottom: 20px;
 }
 
 .nav__list {
@@ -48,7 +72,6 @@ a:hover {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-    gap: 10px;
 }
 
 .nav__link {
@@ -89,7 +112,7 @@ a:hover {
     flex-direction: row;
     width: 100%;
     padding-bottom: 40px;
-    border-bottom: 10px solid var(--default-color);
+    border-bottom: 10px solid rgba(123, 123, 123, 0.7);
 }
 
 .profile__container-img {
@@ -118,7 +141,7 @@ a:hover {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 10px;
-    /* position: relative; */
+    position: relative;
 }
 
 h2.section__title {
@@ -131,16 +154,18 @@ h2.section__title {
     /* position: relative; */
 }
 
-/* .section__title::before {
+.profile__container .section__title::before {
     content: '';
-    width: 180px;
-    height: 5px;
+    width:25%;
+    height: 1px;
     background-color: var(--secondary-color);
     position: absolute;
     bottom: -5px;
-    left: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
     right: 0;
-} */
+}
 
 .profile__container p {
     text-transform: uppercase;
@@ -205,6 +230,17 @@ h2.section__title {
 
 .footer .container .container__content a:hover {
     color: var(--default-color);
+}
+
+.footer .container .container__content a:hover::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: var(--default-color);
+    animation: bottom-line 0.3s;
 }
 
 .container__logo img {
