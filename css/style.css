@@ -69,6 +69,7 @@ a:hover::before {
 .nav__list {
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
@@ -92,6 +93,13 @@ a:hover::before {
     width: 48%;
 }
 
+@media (max-width: 768px) {
+    .container .section {
+        width: 100%;
+        margin: 0 20px;
+    }
+}
+
 .section {
     color: var(--default-color);
     display: flex;
@@ -109,6 +117,9 @@ a:hover::before {
 /* Profile */
 
 .section.profile {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
     padding-bottom: 40px;
@@ -116,12 +127,10 @@ a:hover::before {
 }
 
 .profile__container-img {
-    width: 50%;
     text-align: center;
 }
 
 .profile__container {
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,7 +165,7 @@ h2.section__title {
 
 .profile__container .section__title::before {
     content: '';
-    width:25%;
+    width:50%;
     height: 1px;
     background-color: var(--secondary-color);
     position: absolute;
